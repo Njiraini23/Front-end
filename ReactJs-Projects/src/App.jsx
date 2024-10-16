@@ -1,8 +1,7 @@
 import './App.css';
-import ProductList from './components/products/index';
+import FormComponent from './components/forms';
 
 
-const dummyProductData = ['Product 1', 'Product 2', 'Product 3'];
 
 function App() {
   
@@ -10,9 +9,13 @@ function App() {
   return (
     <div>
       <h1>React JS APP</h1>
-     
+       <FormComponent />
+       {/* <UseReducerExample /> */}
+      {/* <ContextButtonComponent /> */}
+      {/* <ContextTextComponent /> */}
+     {/* <Users /> */}
       {/* <ClassBasedComponent /> */}
-      <ProductList listOfProducts={dummyProductData} name="Kennedy" city="Nairobi" /> 
+      {/* <ProductList listOfProducts={dummyProductData} name="Kennedy" city="Nairobi" /> */}
     </div>
   )
 }
