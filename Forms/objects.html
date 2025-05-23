@@ -5,6 +5,7 @@
 </head>
 <body>
     <script>
+        /*
         const product2 = {
             name: 'shirt',
             'delivery-time': '1 day',
@@ -14,6 +15,39 @@
             }
         };
         console.log(product2);
+        */
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+        
+        const object1 = {
+           message: 'hello' 
+        }
+
+        const object4 = {
+            message: 'Good Job',
+            price: 799
+        };
+        //const message =object4.message;
+        const {message, price} = object4;
+
+        console.log(message);
+        console.log(price);
+        
+        object5 = {
+            // message: message
+            message,
+          //  method: function function1() {
+
+              //  console.log('method');
+                
+            // }
+            method(){
+                console.log('method');
+                
+            }
+        };
+        console.log(object5);
+        object5.method();
         
     </script>
 </body>
