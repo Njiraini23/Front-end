@@ -44,6 +44,15 @@
             PlayGame('scissors');
         });
 
+        document.body.addEventListener('keydown', (event)=> {
+            if(event.key === 'r'){
+                PlayGame('rock');
+            } else if(event.key === 'p') {
+                PlayGame('paper');
+            } else if (event.key === 's') {
+                PlayGame('scissors');
+            }
+        });
         function PlayGame(playerMove){
           const computerMove = pickComputerMove();
 
