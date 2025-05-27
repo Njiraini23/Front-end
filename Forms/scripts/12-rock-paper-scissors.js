@@ -15,9 +15,13 @@
         */
        let isAutoPlaying = false;
        let intervalId;
+       //const autoplay = ()=>{
+
+      // }
+
         function autoplay(){
             if(!isAutoPlaying){
-                intervalId = setInterval(function(){
+                intervalId = setInterval(()=>{
                 const playerMove = pickComputerMove();
                 PlayGame(playerMove);
             }, 1000);
@@ -28,6 +32,17 @@
             }
         }
 
+        document.querySelector('.js-rock-button').addEventListener('click', ()=>{
+            PlayGame('rock');
+        });
+
+        document.querySelector('.js-paper-button').addEventListener('click', ()=>{
+            PlayGame('paper');
+        });
+
+        document.querySelector('.js-scissors-button').addEventListener('click', ()=>{
+            PlayGame('scissors');
+        });
 
         function PlayGame(playerMove){
           const computerMove = pickComputerMove();

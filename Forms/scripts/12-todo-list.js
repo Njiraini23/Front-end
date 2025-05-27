@@ -12,7 +12,7 @@ function UpdateTodoList(){
 
     let todoListHTML = '';
 
-    todoList.forEach(function(todoObject, index){
+    todoList.forEach((todoObject, index)=>{
         
         const {name, dueDate} = todoObject;
         
